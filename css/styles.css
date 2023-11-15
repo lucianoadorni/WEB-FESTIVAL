@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+
+/* COLORS */
+:root {
+    --riot-red: #F12B15;
+    --riot-white: #F0F0F0;
+    --not-red: #D13639;
+    --gray: #2D2D2D;
+}
+
+/* GLOBAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sometype Mono';
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+    /* outline: solid red 1px; */
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* SCROLLBAR */
+*::-webkit-scrollbar {
+width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: var(--riot-red);
+border-radius: 10px;
+border: none
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAV BAR*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+.navScrolled {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,0,36,0) 100%);
+    transition: 0.8s;
+}
+
+nav > figure > img {
+    width: 18em;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul li {
+    list-style: none;
+    padding-left: 1em;
+}
+
+nav > ul li a {
+    color: var(--riot-red);
+    font-family: "Rubik Mono One";
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+nav > ul li a:hover {
+    color: var(--riot-white);
+}
+
+/* MAIN BUY BUTTON */
+#buy-button {
+    position: absolute;
+    padding: 1.7em 2em;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 15px 15px 15px 5px rgba(0,0,0,0.8);
+    background-color: var(--riot-red);
+    transition: 0.3s;
+    top: 90%;
+    right: 5%;
+    z-index: 2;
+}
+
+#buy-button:hover {
+    background-color: black;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.8);
+}
+
+#buy-button a {
+    text-decoration: none;
+    font-family: "Rubik Mono One";
+    font-size: 1.3em;
+    color: var(--riot-white);
+    transition: 0.3s;
+}
+
+#buy-button a:hover {
+    color: var(--riot-red);
+}
+
+/* VIDEO HEADER */
+header {
+    height: 100vh;
+}
+
+header > video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* MAIN */
+main p {
+    color: var(--riot-white);
+    height: fit-content;
+}
+
+main h2 {
+    font-family: "Rubik Mono One";
+    color: var(--riot-white);
+    font-size: 5em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* WHO */
+#who {
+    margin: 4em 0;
+}
+
+#who h3 {
+    font-family: "Rubik Mono One";
+    color: var(--riot-white);
+    font-size: 1.2em;
+    display: inline;
+}
+
+#who a {
+    text-decoration: none;
+}
+
+#who .vidclick {
+    display: contents;
+}
+
+/* TARGET SELECTOR */
+#target-content-kda, #target-content-td, #target-content-hs {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 200ms;
+  z-index: 4;
+}
+
+#target-content-kda:target, #target-content-td:target, #target-content-hs:target {
+    pointer-events: all;
+    opacity: 1;
+}
+      
+.target-inner {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.651);
+    background: black;
+}
+
+a.close {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--riot-white);
+    opacity: 0.5;
+    transition: opacity 200ms;
+}
+
+a.close:hover {
+    opacity: 0.4;
+}
+
+/* KDA */
+#kda {
+    margin: 1em auto;
+    width: 50%;
+    padding: 2em;
+    border-radius: 15px;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#kda:hover {
+    background-color: var(--riot-red);
+}
+
+#kda > div > img {
+    width: 75%;
+    padding-bottom: 0.3em;
+    border-radius: 20px;
+}
+
+#kda > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#kda p {
+    width: 50%;
+}
+
+/* DUO ITEM */
+#duoitem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin: 1em auto;
+}
+
+/* TRUE DAMAGE */
+#truedamage {
+    margin-right: 1em;
+    padding: 2em;
+    border-radius: 15px;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    transition: 0.5s;
+}
+
+#truedamage:hover {
+    background-color: var(--riot-red);
+}
+
+#truedamage > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding-bottom: 1em;
+}
+
+#truedamage > div > img {
+    width: 100%;
+    padding-bottom: 0.3em;
+    border-radius: 20px;
+}
+
+#truedamage p {
+    width: 100%;
+}
+
+/* HEARTSTEEL */
+#heartsteel {
+    padding: 2em;
+    border-radius: 15px;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    transition: 0.5s;
+}
+
+#heartsteel:hover {
+    background-color: var(--riot-red);
+}
+
+#heartsteel > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding-bottom: 1em;
+}
+
+#heartsteel > div > img {
+    width: 70%;
+    padding-bottom: 0.3em;
+    border-radius: 20px;
+}
+
+#heartsteel p {
+    width: 100%;
+}
+
+/* WHERE AND WHEN*/
+#whereandwhen {
+    background-color: var(--not-red);
+    display: flex;
+}
+
+.where, .when{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em 0;
+    width: 50%;
+}
+
+.where > div {
+    background-color: var(--riot-white);
+    border-radius: 15px;
+    padding: 2em;
+    display: flex;
+    width: 90%;
+}
+
+.where > div > div {
+    width: 40%;
+}
+
+.where div > div img {
+    width: 70%;
+}
+
+.where > div p{
+    color: black;
+}
+
+.where iframe {
+    width: 60%;
+    border-radius: 15px;
+}
+
+.when p {
+    font-family: "Rubik Mono One";
+    color: var(--riot-white);
+    font-size: 5em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* BUY */
+#buy > div {
+    width: 30%;
+    padding: 3em 3em;
+    margin: 3em auto;
+    border-radius: 30px;
+    background-color: var(--not-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#buy h3 {
+    font-family: "Rubik Mono One";
+    color: var(--riot-white);
+    font-size: 1.3em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#buy input {
+    width: 90%;
+    padding: 15px;
+    margin: 1em auto;
+    font-size: 15px;
+    background-color: var(--riot-white);
+    color: #000000;
+    border-style: none;
+    border-radius: 50px;
+}
+
+#buy button {
+    margin: 1em auto;
+    padding: 0.7em;
+    border-radius: 15px;
+    border: none;
+    color: var(--riot-white);
+    background-color: black;
+    transition: 0.3s;
+}
+
+#buy button:hover {
+    color: black;
+    background-color: var(--riot-white);
+}
+
+#buy button:active {
+    color: var(--riot-white);
+    background-color: var(--gray);
+}
+
+/* FOOTER */
+footer > #top-footer {
+    background-color: var(--riot-white);
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#top-footer > div:first-child img {
+    width: 15em;
+    padding: 0.5em;
+}
+
+#top-footer > div:nth-child(2) div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#top-footer > div:nth-child(2) img {
+    width: 10em;
+    padding: 0.5em;
+}
+
+#top-footer > div:nth-child(2) img:nth-child(2) {
+    width: 8em;
+}
+
+#top-footer h3 {
+    color: black;
+    font-family: "Rubik Mono One";
+    font-size: 1.7em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#top-footer > div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+}
+
+#top-footer > div:last-child > div i {
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+footer > #bottom-footer {
+    background-color: var(--not-red);
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+#bottom-footer * {
+    padding: 0.5em;
+    color: var(--riot-white);
+}
+
+#bottom-footer h3 {
+    font-family: "Rubik Mono One";
+}
+
+#bottom-footer p {
+    text-decoration: underline;
+}
