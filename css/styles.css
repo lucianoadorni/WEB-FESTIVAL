@@ -232,7 +232,7 @@ a.close:hover {
 
 #kda > div > img {
     width: 75%;
-    padding-bottom: 0.3em;
+    padding-bottom: 1em;
     border-radius: 20px;
 }
 
@@ -284,7 +284,7 @@ a.close:hover {
 
 #truedamage > div > img {
     width: 100%;
-    padding-bottom: 0.3em;
+    padding-bottom: 1em;
     border-radius: 20px;
 }
 
@@ -319,7 +319,7 @@ a.close:hover {
 
 #heartsteel > div > img {
     width: 70%;
-    padding-bottom: 0.3em;
+    padding-bottom: 1em;
     border-radius: 20px;
 }
 
@@ -372,6 +372,11 @@ a.close:hover {
     font-size: 5em;
     padding: 0.5em;
     text-align: center;
+    transition: 0.5s;
+}
+
+.when p:hover {
+    color: black;
 }
 
 /* BUY */
@@ -448,12 +453,8 @@ footer > #top-footer {
 }
 
 #top-footer > div:nth-child(2) img {
-    width: 10em;
-    padding: 0.5em;
-}
-
-#top-footer > div:nth-child(2) img:nth-child(2) {
     width: 8em;
+    padding: 0.5em;
 }
 
 #top-footer h3 {
