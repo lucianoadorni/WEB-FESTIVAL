@@ -61,12 +61,12 @@ nav {
     top: 0;
     z-index: 3;
     width: 100%;
+    transition: 0.8s;
 }
 
 .navScrolled {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,0,36,0) 100%);
-    transition: 0.8s;
 }
 
 nav > figure > img {
@@ -515,7 +515,77 @@ footer > #bottom-footer {
 }
 
 /* MEDIA QUERIES */
+/* MEDIUM DEVICES */
+@media only screen and (max-width: 1230px) {
+    /* NAV */
+    nav > figure > img {
+        width: 9em;
+    }
 
+    /* KDA */
+    #kda {
+        width: 90%;
+    }
+
+    /* DUO ITEM */
+    #duoitem {
+        width: 90%;
+    }
+
+    /* WHERE AND WHEN*/
+    #whereandwhen {
+        flex-direction: column;
+    }
+
+    .where, .when{
+        margin: 4em 0;
+        width: 100%;
+    }
+
+    .where > div {
+        flex-direction: column;
+    }
+
+    .where > div > div {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .where iframe {
+        width: 100%;
+    }
+
+    .when p {
+        font-size: 3em;
+        padding: 0.5em;
+    }
+
+    /* BUY */
+    #buy > div {
+        width: 70%;
+    }
+
+    /* FOOTER */
+    footer > #top-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #top-footer > div {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    #top-footer h3 {
+        font-size: 1.5em;
+    }
+
+    footer > #bottom-footer {
+        flex-direction: column;
+    }
+}
+
+/* SMALL DEVICES */
 @media only screen and (max-width: 667px) {
     /* NAV */
     nav {
@@ -661,6 +731,7 @@ footer > #bottom-footer {
 
     #top-footer > div {
         width: 90%;
+        margin: 1em auto;
     }
 
     #top-footer h3 {
