@@ -516,7 +516,7 @@ footer > #bottom-footer {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 667px) {
     /* NAV */
     nav {
         padding: 1em;
@@ -525,8 +525,29 @@ footer > #bottom-footer {
         width: 8em;
     }
 
+    nav > ul {
+        background-color: #000000a8;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 30%;
+        padding: 2em 2em;
+        border-radius: 15px;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+
+    .openMenu {
+        transform: translateX(0%);
+    }
+
     nav > ul li {
-        display: none;
+        padding-left: 0em;
+        padding-bottom: 1em;
+    }
+
+    nav > ul li a {
+        font-size: 2em;
     }
 
     i.fa-bars-staggered {

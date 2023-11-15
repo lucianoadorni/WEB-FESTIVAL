@@ -10,5 +10,16 @@ window.addEventListener("scroll", () => {
     }
 })
 
+// MENU MOV
+function openMenu() {
+    "use strict";
+    document.getElementById("menu").children[1].classList.toggle("openMenu");
+}
+
+function closeMenu() {
+    "use strict";
+    document.getElementById("menu").children[1].classList.remove("openMenu");
+}
+
 // AOS
 AOS.init();
