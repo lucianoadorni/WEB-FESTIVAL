@@ -93,6 +93,12 @@ nav > ul li a:hover {
     color: var(--riot-white);
 }
 
+nav > i {
+    display: none;
+    color:var(--riot-red);
+    font-size: 1.5em;
+}
+
 /* MAIN BUY BUTTON */
 #buy-button {
     position: absolute;
@@ -495,4 +501,131 @@ footer > #bottom-footer {
 
 #bottom-footer p {
     text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px) {
+    /* NAV */
+    nav > figure > img {
+        width: 8em;
+    }
+
+    nav > ul li {
+        display: none;
+    }
+
+    nav > i {
+        display: block;
+    }
+
+    /* MAIN BUY BUTTON */
+    #buy-button {
+        padding: 1em 1em;
+    }
+
+    #buy-button a {
+        font-size: 1em;
+    }
+
+    /* MAIN */
+    main h2 {
+        font-size: 4em;
+        padding: 0.2em;
+    }
+
+    /* KDA */
+    #kda {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #kda > div {
+        width: 100%;
+    }
+
+    #kda p {
+        width: 100%;
+        font-size: 0.8em;
+        margin: 1em auto;
+    }
+
+    /* DUO ITEM */
+    #duoitem {
+        flex-direction: column;
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    /* TRUE DAMAGE */
+    #truedamage {
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    #truedamage p {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    /* HEARTSTEEL */
+    #heartsteel {
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    #heartsteel p {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    /* WHERE AND WHEN*/
+    #whereandwhen {
+        flex-direction: column;
+    }
+
+    .where, .when{
+        margin: 4em 0;
+        width: 100%;
+    }
+
+    .where > div {
+        flex-direction: column;
+    }
+
+    .where > div > div {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .where iframe {
+        width: 100%;
+    }
+
+    .when p {
+        font-size: 3em;
+        padding: 0.5em;
+    }
+
+    /* BUY */
+    #buy > div {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    footer > #top-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #top-footer > div {
+        width: 90%;
+    }
+
+    footer > #bottom-footer {
+        flex-direction: column;
+    }
+
 }
