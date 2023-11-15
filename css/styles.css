@@ -93,7 +93,13 @@ nav > ul li a:hover {
     color: var(--riot-white);
 }
 
-nav > i {
+i.fa-bars-staggered {
+    display: none;
+    color:var(--riot-red);
+    font-size: 1.5em;
+}
+
+i.fa-bars-staggered::before {
     display: none;
     color:var(--riot-red);
     font-size: 1.5em;
@@ -102,7 +108,7 @@ nav > i {
 /* MAIN BUY BUTTON */
 #buy-button {
     position: absolute;
-    padding: 1.7em 2em;
+    padding: 1em 2em;
     border-radius: 15px;
     border: none;
     box-shadow: 15px 15px 15px 5px rgba(0,0,0,0.8);
@@ -201,6 +207,11 @@ main h2 {
     transform: translateX(-50%) translateY(-50%);
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.651);
     background: black;
+}
+
+.target-inner iframe {
+    height: 50vh;
+    width: 80vw;
 }
 
 a.close {
@@ -507,6 +518,9 @@ footer > #bottom-footer {
 
 @media only screen and (max-width: 1000px) {
     /* NAV */
+    nav {
+        padding: 1em;
+    }
     nav > figure > img {
         width: 8em;
     }
@@ -515,7 +529,11 @@ footer > #bottom-footer {
         display: none;
     }
 
-    nav > i {
+    i.fa-bars-staggered {
+        display: block;
+    }
+
+    i.fa-bars-staggered::before {
         display: block;
     }
 
@@ -622,6 +640,10 @@ footer > #bottom-footer {
 
     #top-footer > div {
         width: 90%;
+    }
+
+    #top-footer h3 {
+        font-size: 1.5em;
     }
 
     footer > #bottom-footer {
