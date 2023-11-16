@@ -109,6 +109,11 @@ i.fa-bars-staggered::before {
 #buy-button {
     position: absolute;
     padding: 1em 2em;
+    text-decoration: none;
+    font-family: "Rubik Mono One";
+    font-size: 1.3em;
+    color: var(--riot-white);
+    transition: 0.3s;
     border-radius: 15px;
     border: none;
     box-shadow: 15px 15px 15px 5px rgba(0,0,0,0.8);
@@ -124,15 +129,7 @@ i.fa-bars-staggered::before {
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.8);
 }
 
-#buy-button a {
-    text-decoration: none;
-    font-family: "Rubik Mono One";
-    font-size: 1.3em;
-    color: var(--riot-white);
-    transition: 0.3s;
-}
-
-#buy-button a:hover {
+#buy-button:hover {
     color: var(--riot-red);
 }
 
@@ -631,9 +628,6 @@ footer > #bottom-footer {
     /* MAIN BUY BUTTON */
     #buy-button {
         padding: 1em 1em;
-    }
-
-    #buy-button a {
         font-size: 1em;
     }
 
