@@ -115,19 +115,19 @@ i.fa-bars-staggered::before {
     color: var(--riot-white);
     transition: 0.3s;
     border-radius: 15px;
-    border: 1px solid black;
     box-shadow: 15px 15px 15px 5px rgba(0, 0, 0, 0.5);
-    background-color: var(--riot-red);
+    background: rgb(241,43,21);
+    background: linear-gradient(40deg, rgba(241,43,21,1) 0%, rgba(0,0,0,1) 100%);
+    background-size:1px 200px; 
     transition: 0.3s;
     top: 90%;
-    right: 5%;
+    right: 2%;
     z-index: 2;
 }
 
 #buy-button:hover {
-    background-color: black;
+    background-position:-100px;  
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.8);
-    border: 1px solid var(--riot-red);
 }
 
 #buy-button:hover {
@@ -234,7 +234,8 @@ a.close:hover {
     width: 50%;
     padding: 2em;
     border-radius: 15px;
-    background-color: var(--gray);
+    background: rgb(45,45,45);
+    background: linear-gradient(40deg, rgba(45,45,45,1) 0%, rgba(202,139,245,1) 100%);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -276,7 +277,8 @@ a.close:hover {
     margin-right: 1em;
     padding: 2em;
     border-radius: 15px;
-    background-color: var(--gray);
+    background: rgb(45,45,45);
+    background: linear-gradient(40deg, rgba(45,45,45,1) 0%, rgba(235,144,47,1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -311,7 +313,8 @@ a.close:hover {
 #heartsteel {
     padding: 2em;
     border-radius: 15px;
-    background-color: var(--gray);
+    background: rgb(45,45,45);
+    background: linear-gradient(40deg, rgba(45,45,45,1) 0%, rgb(32, 86, 202) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
