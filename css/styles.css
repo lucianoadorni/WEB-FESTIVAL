@@ -236,14 +236,16 @@ a.close:hover {
     border-radius: 15px;
     background: rgb(45,45,45);
     background: linear-gradient(40deg, rgba(45,45,45,1) 0%, rgba(202,139,245,1) 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transition: 0.5s;
 }
 
 #kda:hover {
-    background-color: var(--riot-red);
+    background-position: 0 0;
 }
 
 #kda > div > img {
@@ -279,15 +281,17 @@ a.close:hover {
     border-radius: 15px;
     background: rgb(45,45,45);
     background: linear-gradient(40deg, rgba(45,45,45,1) 0%, rgba(235,144,47,1) 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    transition: 0.5s;
 }
 
 #truedamage:hover {
-    background-color: var(--riot-red);
+    background-position: 0 0;
 }
 
 #truedamage > div {
@@ -315,15 +319,17 @@ a.close:hover {
     border-radius: 15px;
     background: rgb(45,45,45);
     background: linear-gradient(40deg, rgba(45,45,45,1) 0%, rgb(32, 86, 202) 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    transition: 0.5s;
 }
 
 #heartsteel:hover {
-    background-color: var(--riot-red);
+    background-position: 0 0;
 }
 
 #heartsteel > div {
@@ -500,6 +506,7 @@ footer > #bottom-footer {
     padding: 2em;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 #bottom-footer * {
@@ -637,7 +644,7 @@ footer > #bottom-footer {
 
     /* MAIN */
     main h2 {
-        font-size: 4em;
+        font-size: 3em;
         padding: 0.2em;
     }
 
@@ -694,7 +701,7 @@ footer > #bottom-footer {
     }
 
     .where, .when{
-        margin: 4em 0;
+        margin: 1em 0;
         width: 100%;
     }
 
@@ -712,7 +719,7 @@ footer > #bottom-footer {
     }
 
     .when p {
-        font-size: 3em;
+        font-size: 2em;
         padding: 0.5em;
     }
 
@@ -734,6 +741,10 @@ footer > #bottom-footer {
 
     #top-footer h3 {
         font-size: 1.5em;
+    }
+
+    #top-footer > div:nth-child(2) div {
+        flex-direction: column;
     }
 
     footer > #bottom-footer {
