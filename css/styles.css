@@ -521,7 +521,7 @@ footer > #bottom-footer {
 
 /* MEDIA QUERIES */
 /* MEDIUM DEVICES */
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 1231px) {
     /* REMOVE HOVER STUFF */
     nav > ul li a:hover {
         color: var(--riot-red);
@@ -780,5 +780,4 @@ footer > #bottom-footer {
     footer > #bottom-footer {
         flex-direction: column;
     }
-
 }
