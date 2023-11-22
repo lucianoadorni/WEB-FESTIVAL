@@ -12,16 +12,6 @@
     </head>
 
     <body>
-
-        <!-- Para escribir PHP, deberias de cambiar el index a .php y de ahi
-        se procesa todos los comandos sacado de la base de datos. -->
-
-        <!-- Instalando XAMPP y dentro APACHE al abrirlo con localhost, crea este
-        mini servidor -->
-        <?php
-            echo "<p>hello world!11</p>";
-        ?>
-
         <nav id="menu">
             <figure>
                 <a href="#"><img src="media/riot-games-LOGO.svg" alt="riot logo"></a>
@@ -38,6 +28,25 @@
             <video src="media/header-video.mp4" autoplay muted loop></video>
         </header>
         <main>
+            <!-- Para escribir PHP, deberias de cambiar el index a .php y de ahi
+            se procesa todos los comandos sacado de la base de datos. -->
+
+            <!-- Instalando XAMPP y dentro APACHE al abrirlo con localhost, crea este
+            mini servidor -->
+            <?php
+                echo "<h2>hello world!</h2>";
+                // Mismo boton de comentarios.
+
+                // Simbolo $ en php es una variable.
+                $num_1 = 57;
+                $num_2 = 34;
+
+                $result_sum = $num_1 + $num_2;
+                // Para concatenar una variable dentro de un string de html se una un "."
+
+                echo "<h2>" . $result_sum . "</h2>";
+            ?>
+
             <section id="who">
                 <h2 data-aos="fade-up">WHO?</h2>
                 <a class="vidclick" href="#target-content-kda"><div id="kda">
